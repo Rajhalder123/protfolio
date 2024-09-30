@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+  background-color: rgb(11, 26, 51);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* SendMessage Section */
+.send-message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: rgb(20, 40, 70); /* Darker background for contrast */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+.send-message-title {
+  font-size: 2.5rem;
+  color: #ffc107; /* Bright yellow for title */
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.send-message-description {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.send-message-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #444;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #ffc107; /* Bright yellow for focus state */
+  background-color: #444;
+}
+
+.form-textarea {
+  height: 150px;
+  resize: none;
+}
+
+.form-button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #0077b5; /* LinkedIn blue color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #005582; /* Darker blue on hover */
+  transform: translateY(-2px);
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
