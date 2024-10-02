@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import Typed from 'typed.js';
-import pdf from '../pdf/resume.pdf';
-import hero from './data/hero.json';
+import pdf from '../pdf/resume.pdf'; // Ensure this path is correct
 
 const Home = () => {
   const typedRef = useRef(null);
+  const imageSrc = 'assets/hero/hero.png'; // Path to your image
 
   useEffect(() => {
     const options = {
@@ -44,7 +44,7 @@ const Home = () => {
       {/* Right Section */}
       <div className="right">
         <div className="img" data-aos="fade-up-left" data-aos-duration="1000">
-          <img src={`/assets/${hero.imgSrc}`} alt="hero"/>
+          <img src={`${process.env.PUBLIC_URL}/${imageSrc}`} alt="hero" />
         </div>
       </div>
     </div>
