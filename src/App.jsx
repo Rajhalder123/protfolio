@@ -18,8 +18,9 @@ const App =()=> {
  <Experience/>
  <Skills/>
  <Contact/>
+ <Projects/>
 <EmailSender/>
-<Projects/>
+
 
 
  </>
