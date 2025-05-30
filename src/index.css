@@ -1,4 +1,6 @@
-/* Root Variables (Define global variables for reusability) */
+/* ======================== */
+/* 🌍 Root & Global Styles  */
+/* ======================== */
 :root {
   --box-shadow: 5px 5px 10px 10px rgba(101, 175, 10, 0.5);
   --bg-color: rgb(40, 47, 97);
@@ -10,21 +12,25 @@
   --border-color: yellow;
 }
 
+body {
+  background-color: rgb(11, 26, 51);
+  color: var(--primary-color);
+  font-family: Arial, sans-serif;
+}
 
-/* Default Light Theme */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
 
-/* Dark Theme */
-
-/* =============================== */
-/* 🌙 Additional Dark Mode Styles  */
-/* =============================== */
-
+/* ======================== */
+/* 🌗 Dark Theme Overrides  */
+/* ======================== */
 body.dark {
   background-color: #121212;
   color: #f0f0f0;
 }
 
-/* Home Section */
 body.dark .home-section {
   background-color: #1e1e1e;
 }
@@ -39,128 +45,44 @@ body.dark .tech-stack span {
   color: #e0e0e0;
 }
 
-/* Skills Section */
 body.dark .skills .items .item {
   background-color: #1f1f1f;
   border-color: #ffc107;
   box-shadow: 3px 3px 8px rgba(255, 193, 7, 0.3);
 }
 
-/* Contact Icons */
-body.dark .contact-item {
-  color: #ffc107;
-}
-
-body.dark .contact-item:hover,
-body.dark .contact-item:focus {
-  color: #fff200;
-}
-
-/* Navbar */
 body.dark .nav_bar {
   background-color: #1a1a1a;
 }
 
-
-
-/* Buttons (already included in your CSS, no changes needed here) */
-
-/* Media Query Adjustments if needed */
-@media (max-width: 576px) {
-  body.dark .skills .items .item {
-    background-color: #2b2b2b;
-  }
+body.dark .contact-title,
+body.dark .contact-item {
+  color: #a5d63a;
 }
 
-
-/* Common styles */
-.nav_bar {
-  padding: 1rem;
-  transition: background-color 0.3s ease;
-}
-.nav_items {
-  margin: 0 10px;
-  color: inherit;
+body.dark .contact-item:hover,
+body.dark .contact-item:focus {
+  color: #ffd500;
 }
 
+/* ======================== */
+/* 🔘 Navbar Styles         */
+/* ======================== */
 
 
-/* General Global Styles */
-body {
-  background-color: rgb(11, 26, 51);
-  color: var(--primary-color);
-  font-family: Arial, sans-serif;
-}
-
-/* Links */
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-/* Buttons */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.btn-outline-warning {
-  color: #ffc107;
-  border: 2px solid #ffc107;
-  background-color: transparent;
-}
-
-.btn-outline-warning:hover {
-  background-color: #ffc107;
-  color: #fff;
-}
-
-/* Navbar */
-.nav_bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav_bar .nav_items {
-  padding: var(--padding);
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.nav_bar .nav_items:hover {
-  border-bottom: 2px solid var(--hover-color);
-}
-
-/* Home Section */
+/* ======================== */
+/* 🏠 Home Section          */
+/* ======================== */
 .home-section {
-  /* Take full viewport width and height */
   width: 100vw;
- 
-
-  /* Padding to keep content away from edges */
   padding: 7rem 2rem;
-
-  /* Background color (from your variable) */
-  background: var(--bg);
-
-  /* Use box-sizing to include padding in height/width */
+  background: var(--bg-color);
   box-sizing: border-box;
-
-  /* Optional: Flex to center content vertically */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-
 
 .home-container {
   display: flex;
@@ -168,8 +90,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-   padding-bottom: 105px;
-  
+  padding-bottom: 105px;
 }
 
 .home-left {
@@ -182,7 +103,6 @@ a {
   text-align: center;
 }
 
-
 .hero-image {
   max-width: 200px;
   width: 100%;
@@ -190,16 +110,13 @@ a {
   border-radius: 20px;
   object-fit: cover;
   cursor: not-allowed;
+  animation: fireGlow 2s infinite;
 }
 
-
-
-/* Dark mode: remove or change glow */
-.home-section.dark .hero-image {
-  animation: none; /* stops the glow animation */
-  box-shadow: none; /* removes the bright shadows */
+body.dark .hero-image {
+  animation: none;
+  box-shadow: none;
 }
-
 
 @keyframes fireGlow {
   0%, 100% {
@@ -216,13 +133,11 @@ a {
   }
 }
 
-
-
-
-.home-intro, .home-highlight {
+.home-intro,
+.home-highlight {
   font-size: 1.1rem;
   margin-top: 1rem;
-  color: var(--text);
+  color: var(--primary-color);
 }
 
 .tech-stack {
@@ -233,10 +148,36 @@ a {
 }
 
 .tech-stack span {
-  background: var(--highlight);
+  background: #4e54c8;
   padding: 0.4rem 0.8rem;
   border-radius: 8px;
   font-weight: 500;
+  color: #fff;
+}
+
+/* ======================== */
+/* 🔘 Buttons               */
+/* ======================== */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-outline-warning {
+  color: #ffc107;
+  border: 2px solid #ffc107;
+  background-color: transparent;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc107;
   color: #fff;
 }
 
@@ -245,89 +186,56 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  color: #4e54c8, #8f94fb;
 }
 
 .cta-btn,
 .download-btn {
-  display: inline-block;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
   border: none;
   border-radius: 12px;
-  box-shadow:
-    0 4px 6px rgba(9, 0, 0, 0.1),
-    0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(9, 0, 0, 0.1),
+              0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
-  text-decoration: none;
   cursor: pointer;
-  transform-style: preserve-3d;
-  will-change: transform, box-shadow;
 }
 
+/* ======================== */
+/* 💼 Skills Section        */
+/* ======================== */
 
 
-/* Experience  */
-/* experince.css */
-
-/* Skills Section */
-.skills {
-  text-align: center;
-  width: 500px;
+/* ======================== */
+/* 📞 Contact Section       */
+/* ======================== */
+.contact-container {
+  padding: 90px 20px;
+  max-width: 1000px;
   margin: 0 auto;
-}
-
-.skills .items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-}
-
-.skills .items .item {
-  width: calc(33.33%);
-  background-color: black;
-  margin: 20px;
   text-align: center;
-  padding: 20px;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--box-shadow);
 }
-
-.skills .items .item img {
-  width: 70px;
-}
-
 
 .contact-title {
-  padding-bottom: 10px;
- font-size: 2.8rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 40px;
- /* Green highlight */
- 
+  
+  padding-bottom: 22px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.contact-container {
-  padding: 80px;
-  text-align: center;
- 
-}
 
 .contact-icons {
   display: flex;
-  gap: 40px;
   justify-content: center;
-  align-items: center;
+  
+  gap: 15px;
+  flex-wrap: wrap-reverse;
+  margin-top: 20px;
 }
 
 .contact-item {
+  font-size: 2rem;
   color: #94d82d;
-  font-size: 3.2rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -340,14 +248,17 @@ a {
 }
 
 
-/* Media Queries for Phones (max-width: 576px) */
+/* ======================== */
+/* 📱 Responsive Media      */
+/* ======================== */
 @media (max-width: 576px) {
   .home {
     flex-direction: column;
     padding: 20px;
   }
 
-  .home .left, .home .right {
+  .home .left,
+  .home .right {
     width: 100%;
     margin: 0;
     padding: 20px;
@@ -367,11 +278,7 @@ a {
     width: 100%;
   }
 
-  .contact-icon {
-    flex-direction: column;
+  body.dark .skills .items .item {
+    background-color: #2b2b2b;
   }
-  
 }
-
-/* visitor count */
-
