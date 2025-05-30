@@ -1,147 +1,143 @@
-/* General Variables */
-:root {
-  --primary-color: #ffc107;
-  --secondary-color: #333;
-  --card-bg-color: #282f61;
-  --border-color: yellow;
-  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  --transition-duration: 0.3s;
-  --hover-scale: 1.05;
-}
-
-/* Container Styles */
+/* Projects Section Container */
 .projects-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 30px;
-  background-color: #0b1a33;
+  padding: 90px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.projects-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: var(--primary-color);
-  text-transform: uppercase;
+/* Title */
+.projects-title {
+  padding-bottom: 10px;
+ font-size: 2.8rem;
+  font-weight: 700;
   text-align: center;
-  animation: slideDown 1s ease-out;
+  margin-bottom: 40px;
+  color: #94d82d; /* Green highlight */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* Project Cards */
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Project Card */
 .project-card {
-  background-color: var(--card-bg-color);
-  border-radius: 10px;
-  border: 1px solid var(--border-color);
-  box-shadow: var(--box-shadow);
+  background-color: #222; /* Dark card background */
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(148, 216, 45, 0.7);
   overflow: hidden;
-  width: 90%;
-  max-width: 350px; /* Ensures a maximum width for larger screens */
-  margin: 70px;
-  transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
   cursor: pointer;
-  animation: fadeIn 1s ease-out;
-  text-align: center; /* Centers text inside the card */
-  display: flex;
-  flex-direction: column;
+  color: #ccc;
 }
 
 .project-card:hover {
-  transform: scale(var(--hover-scale));
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 0 24px rgba(148, 216, 45, 1);
 }
 
+/* Image */
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
-  border-bottom: 2px solid var(--border-color);
-  transition: transform var(--transition-duration);
+  display: block;
 }
 
-.project-card:hover .project-image {
-  transform: scale(1.1);
-}
-
+/* Card Body */
 .project-card-body {
-  padding: 15px;
-  flex-grow: 1; /* Makes the body take up the remaining space */
+  padding: 15px 20px;
 }
 
+/* Project Title */
 .project-title {
   font-size: 1.5rem;
-  color: var(--primary-color);
-  margin-bottom: 10px;
-  text-transform: uppercase;
+  color: #94d82d;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
 }
 
+/* Description */
 .project-description {
-  font-size: 1rem;
   color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.3;
   margin-bottom: 15px;
+  min-height: 60px;
+  transition: color 0.3s ease;
 }
 
+/* Buttons Container */
+.project-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Buttons Base Style */
 .project-button {
-  margin: 5px;
-  padding: 8px 16px;
-  border-radius: 5px;
-  font-weight: bold;
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
   text-decoration: none;
-  display: inline-block;
-  transition: background-color var(--transition-duration), color var(--transition-duration);
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: white;
+  user-select: none;
+  cursor: pointer;
 }
 
+/* Demo Button */
 .project-button.demo {
-  background-color: #0077b5;
-  color: #fff;
+  background-color: #94d82d;
 }
 
 .project-button.demo:hover {
-  background-color: #005582;
+  background-color: #7bb31a;
 }
 
+/* Code Button */
 .project-button.code {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: #333;
+  border: 1.5px solid #94d82d;
+  color: white;
 }
 
 .project-button.code:hover {
-  background-color: #ffb300;
-  color: #fff;
+  background-color: #94d82d;
+  color: #222;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* === Dark Mode Overrides === */
+
+body.dark .projects-container {
+  color: #ddd;
+  background-color: #121212; /* Optional dark background */
 }
 
-@keyframes slideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+body.dark .project-card {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 12px rgba(148, 216, 45, 0.5);
+  color: #eee;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .project-card {
-    width: 90%;
-    margin: 15px 0;
-  }
+body.dark .project-card:hover {
+  box-shadow: 0 0 24px rgba(148, 216, 45, 0.8);
 }
 
-@media (max-width: 576px) {
-  .project-card {
-    width: 100%;
-  }
+body.dark .project-title {
+  color: #a5d63a;
+}
+
+body.dark .project-description {
+  color: #bbb;
 }

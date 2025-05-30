@@ -1,42 +1,96 @@
 [
   {
-    "id": 1,
-    "role": "Senior Software Development Engineer SDE - II",
-    "organisation": "Google",
-    "startDate": "Sept, 2023",
-    "endDate": "Present",
-    
-    "location": "CA,United State",
+    "id": 3,
+    "organisation": "Payme Online Transaction",
+    "startDate": "June, 2023",
+    "endDate": "August, 2023",
     "experiences": [
-      "Worked on Google Gmail",
-      "Worked with the Google Bard Team"
+      "Built UI components with React.js and JavaScript.",
+      "Collaborated with designers to create responsive, accessible web pages.",
+      "Integrated EmailJS for contact form functionality.",
+      "Participated in code reviews and agile scrum meetings."
     ],
-    "imageSrc": "company/google.png"
+    "imageSrc": "company/payme.png"
+  },
+  {
+    "id": 1,
+    "organisation": "Competitive Programming Club",
+    "startDate": "September, 2023",
+    "endDate": "May, 2025",
+    "experiences": [
+      "Participated in coding challenges and competitions to sharpen problem-solving skills.",
+      "Engaged in regular practice sessions for competitive programming contests.",
+      "Shared problem-solving techniques to support peer learning."
+    ],
+    "imageSrc": "freelance.png"
   },
   {
     "id": 2,
-    "role": "Software Development Engineer SDE - I",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2022",
-    "endDate": "Aug, 2023",
-    "location": "London, UK",
+    "organisation": "Freelance / Personal Project - Car Website Frontend",
+    "startDate": "December, 2023",
+    "endDate": "March, 2024",
     "experiences": [
-      "Worked on Windows 10 terminal",
-      "Worked on Window 11 Upcoming features"
+      "Developed frontend for a car dealership website using HTML, CSS, Bootstrap, JavaScript, and React JSX.",
+      "Created a responsive interface showcasing car models and features.",
+      "Implemented dynamic search, filters, and comparison for enhanced UX.",
+      "Ensured cross-browser compatibility and mobile responsiveness."
     ],
     "imageSrc": "company/microsoft.png"
   },
   {
-    "id": 3,
-    "role": "Software Development Engineer - Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2021",
-    "endDate": "Jun, 2022",
-    "location": "Bengluru, India",
+    "id": 4,
+    "organisation": "Open Source Contributor - Various Projects",
+    "startDate": "March, 2024",
+    "endDate": "Present",
     "experiences": [
-      "Worked on Nextflix payment system",
-      "Helped to create UI for video player"
+      "Contributed bug fixes and feature enhancements to open source React libraries.",
+      "Reviewed pull requests and engaged in community discussions.",
+      "Documented component usage and improved test coverage."
     ],
-    "imageSrc": "company/netflix.png"
+    "imageSrc": "company/github.png"
+  },
+  {
+    "id": 5,
+    "organisation": "Fotoflex App (Frontend Developer)",
+    "startDate": "April, 2024",
+    "endDate": "May, 2024",
+    "experiences": [
+      "Built a real-time photo editing app using React.js and Firebase.",
+      "Integrated cropping, filtering, and adjustment tools.",
+      "Used Firebase for authentication, storage, and live updates.",
+      "Designed an intuitive, responsive UI focused on usability."
+    ],
+    "imageSrc": "company/fotoflex.png",
+    "demo": "https://fotoflex-demo.vercel.app",
+    "source": "https://github.com/rajhalder8000/fotoflex"
+  },
+  {
+    "id": 7,
+    "organisation": "QR Code Generator (Frontend Developer)",
+    "startDate": "May, 2024",
+    "endDate": "May, 2024",
+    "experiences": [
+      "Developed a QR code generator with React.js and a public API.",
+      "Enabled real-time QR code generation based on user input.",
+      "Applied responsive design for mobile and desktop compatibility."
+    ],
+    "imageSrc": "company/qr.png",
+    "demo": "https://qrgen-rajhalder.vercel.app",
+    "source": "https://github.com/rajhalder8000/qr-code-generator"
+  },
+  {
+    "id": 6,
+    "organisation": "Chatty App (Full Stack Developer)",
+    "startDate": "May, 2024",
+    "endDate": "June, 2024",
+    "experiences": [
+      "Created a real-time chat app using React.js and MongoDb.",
+      "Implemented user authentication, notifications, and typing indicators.",
+      "Optimized for real-time message handling and concurrency.",
+      "Focused on responsive design and accessibility across devices."
+    ],
+    "imageSrc": "company/chatty.png",
+    "demo": "https://chatty-app.vercel.app",
+    "source": "https://github.com/rajhalder8000/chatty"
   }
 ]

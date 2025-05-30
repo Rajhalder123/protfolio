@@ -1,101 +1,178 @@
-/* General Styles */
-body {
-  background-color: rgb(11, 26, 51);
-  color: white;
+/* ============================
+   Dark Mode: Contact Form Section
+   ============================ */
+body.dark .send-message-container {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+body.dark .send-message-title,
+body.dark .send-message-description {
+  color: #f0f0f0;
 }
 
-/* SendMessage Section */
+body.dark .send-message-box {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .form-input,
+body.dark .form-textarea {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+body.dark .form-input::placeholder,
+body.dark .form-textarea::placeholder {
+  color: #aaa;
+}
+
+body.dark .form-button {
+  background-color: #ffc107;
+  color: #000;
+}
+
+body.dark .form-button:hover {
+  background-color: #ffca28;
+}
+
+body.dark .message-status {
+  color: #90caf9;
+}
+
+
+/* ============================
+   Container & Layout
+   ============================ */
 .send-message-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px;
-  background-color: rgb(20, 40, 70); /* Darker background for contrast */
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  margin-top: 40px;
-  max-width: 600px;
-  margin: 0 auto;
-  animation-name: fadeIn;
-  animation-duration: 1s;
+  padding: 80px 20px;
+  max-width: var(--max-width);
+  margin: auto;
+  font-family: var(--font-family);
+  border-radius: var(--border-radius);
+  background-color: var(--background-dark);
+  transition: box-shadow 0.3s ease;
 }
 
+.send-message-container:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.send-message-box {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: var(--border-radius);
+  background-color: rgb(27, 27, 85);
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  transition: transform 0.3s ease;
+}
+
+.send-message-box:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ============================
+   Typography
+   ============================ */
 .send-message-title {
-  font-size: 2.5rem;
-  color: #ffc107; /* Bright yellow for title */
-  margin-bottom: 15px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
   text-align: center;
-  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.14);
 }
 
 .send-message-description {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-bottom: 30px;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
   text-align: center;
-  max-width: 500px;
 }
 
+
+/* ============================
+   Form & Inputs
+   ============================ */
 .send-message-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  gap: 20px;
 }
 
 .form-input,
 .form-textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 2px solid #444;
-  border-radius: 5px;
+  padding: 15px;
   font-size: 1rem;
-  background-color: #333;
-  color: #fff;
-  transition: border-color 0.3s ease, background-color 0.3s ease;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-color);
+  background-color: #1f1f3d;
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .form-input:focus,
 .form-textarea:focus {
-  outline: none;
-  border-color: #ffc107; /* Bright yellow for focus state */
-  background-color: #444;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(147, 204, 41, 0.4);
 }
 
 .form-textarea {
-  height: 150px;
-  resize: none;
+  min-height: 150px;
+  resize: vertical;
 }
 
+
+/* ============================
+   Buttons
+   ============================ */
 .form-button {
   padding: 12px 20px;
   font-size: 1.1rem;
-  color: #fff;
-  background-color: #0077b5; /* LinkedIn blue color */
+  font-weight: 600;
   border: none;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
+  background-color: royalblue;
+  color: var(--background-dark);
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .form-button:hover {
-  background-color: #005582; /* Darker blue on hover */
+  background-color: rgb(32, 178, 236);
   transform: translateY(-2px);
 }
 
-/* Keyframes for Animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+
+/* ============================
+   Feedback Message
+   ============================ */
+.message-status {
+  margin-top: 15px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
 }
+body.dark .form-button {
+  background-color: rgb(17, 17, 18);
+  color: var(--background-dark);
+}
+
+body.dark .form-button:hover {
+  background-color: rgb(55, 106, 201);
+}
+

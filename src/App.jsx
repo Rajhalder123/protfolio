@@ -7,6 +7,8 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import EmailSender from './components/EmailSender';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
+
 
 
 
@@ -15,11 +17,16 @@ const App =()=> {
  <>
  <Navbar/>
  <Home/>
+
+  <Skills/>
  <Experience/>
- <Skills/>
- <Contact/>
+
+ <Projects/>
+ 
 <EmailSender/>
-<Projects/>
+<Contact/>
+<Footer/>
+
 
 
  </>
