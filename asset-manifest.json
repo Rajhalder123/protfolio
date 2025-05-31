@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/protfolio/static/css/main.0a764226.css",
+    "main.js": "/protfolio/static/js/main.df4312a4.js",
+    "static/media/resume.pdf": "/protfolio/static/media/resume.f63adb20ada7f2b7ce6b.pdf",
+    "index.html": "/protfolio/index.html",
+    "main.0a764226.css.map": "/protfolio/static/css/main.0a764226.css.map",
+    "main.df4312a4.js.map": "/protfolio/static/js/main.df4312a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a764226.css",
+    "static/js/main.df4312a4.js"
+  ]
+}
