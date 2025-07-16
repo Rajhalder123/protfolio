@@ -2,7 +2,11 @@
    Dark Mode: Contact Form Section
    ============================ */
 body.dark .send-message-container {
+<<<<<<< HEAD
   background-color: #121212;
+=======
+  background-color: #1a1a1a;
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
   color: #f0f0f0;
 }
 
@@ -11,11 +15,23 @@ body.dark .send-message-description {
   color: #f0f0f0;
 }
 
+<<<<<<< HEAD
 
 
 body.dark .form-input,
 body.dark .form-textarea {
   background-color: #121212;
+=======
+body.dark .send-message-box {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .form-input,
+body.dark .form-textarea {
+  background-color: #2a2a2a;
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
   color: #f0f0f0;
   border: 1px solid #444;
 }
@@ -35,7 +51,11 @@ body.dark .form-button:hover {
 }
 
 body.dark .message-status {
+<<<<<<< HEAD
   color: #9db8ce;
+=======
+  color: #90caf9;
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
 }
 
 
@@ -50,7 +70,10 @@ body.dark .message-status {
   border-radius: var(--border-radius);
   background-color: var(--background-dark);
   transition: box-shadow 0.3s ease;
+<<<<<<< HEAD
   color: whitesmoke;
+=======
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
 }
 
 .send-message-container:hover {
@@ -62,7 +85,11 @@ body.dark .message-status {
   margin: 0 auto;
   padding: 40px 30px;
   border-radius: var(--border-radius);
+<<<<<<< HEAD
   background-color: rgb(107, 107, 118);
+=======
+  background-color: rgb(27, 27, 85);
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
   box-shadow: var(--box-shadow);
   color: var(--text-color);
   transition: transform 0.3s ease;
@@ -170,6 +197,10 @@ body.dark .form-button {
 }
 
 body.dark .form-button:hover {
+<<<<<<< HEAD
   background-color: rgb(115, 117, 122);
+=======
+  background-color: rgb(55, 106, 201);
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
 }
 

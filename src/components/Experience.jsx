@@ -19,6 +19,7 @@ const Experience = () => {
 
   const renderSection = (title, items) => (
     <div className="experience-section">
+<<<<<<< HEAD
       {items.map(
         (
           {
@@ -40,6 +41,19 @@ const Experience = () => {
             data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
             data-aos-duration="800"
           >
+=======
+      
+      {items.map(
+        ({ id, role, organisation, startDate, endDate, experiences, imageSrc, demo, source }) => (
+          <article
+            key={id}
+            className="experience-card"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            
+
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
             <h4 className="experience-org-date">
               {organisation && (
                 <span className="experience-org">{organisation} | </span>
@@ -50,10 +64,19 @@ const Experience = () => {
             </h4>
 
             <ul className="experience-list">
+<<<<<<< HEAD
               {experiences.map((exp, i) => (
                 <li key={i}>{exp}</li>
               ))}
             </ul>
+=======
+              {experiences.map((exp, index) => (
+                <li key={index}>{exp}</li>
+              ))}
+            </ul>
+
+          
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
           </article>
         )
       )}
@@ -63,6 +86,10 @@ const Experience = () => {
   return (
     <section id="experience" aria-label="Work and project experience section">
       <h1>EXPERIENCE</h1>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
       {renderSection("Professional & Club Experience", mainExperiences)}
       {renderSection("In-Hand Projects (Full Stack)", inHandProjects)}
       {renderSection("Frontend Project", frontendProjects)}

@@ -9,7 +9,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   background-color: #2c2c7a;
+=======
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
 }
 
 /* === Title === */

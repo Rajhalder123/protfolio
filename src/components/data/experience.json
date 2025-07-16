@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "id": 1,
     "organisation": "Payme Online Transaction (Frontend Intern)",
     "startDate": "June, 2023",
@@ -9,22 +10,44 @@
       "Integrated EmailJS for secure form handling and external email automation.",
       "Collaborated with designers and QA to deliver pixel-perfect UIs with cross-browser compatibility.",
       "Participated in code reviews, version control (Git), and agile development cycles."
+=======
+    "id": 3,
+    "organisation": "Payme Online Transaction",
+    "startDate": "June, 2023",
+    "endDate": "August, 2023",
+    "experiences": [
+      "Built UI components with React.js and JavaScript.",
+      "Collaborated with designers to create responsive, accessible web pages.",
+      "Integrated EmailJS for contact form functionality.",
+      "Participated in code reviews and agile scrum meetings."
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
     ],
     "imageSrc": "company/payme.png"
   },
   {
+<<<<<<< HEAD
     "id": 2,
+=======
+    "id": 1,
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
     "organisation": "Competitive Programming Club",
     "startDate": "September, 2023",
     "endDate": "May, 2025",
     "experiences": [
+<<<<<<< HEAD
       "Solved algorithmic problems in C++, JavaScript, and Python to strengthen logic building.",
       "Represented MAKAUT in intra-college and inter-college contests like CodeChef and LeetCode.",
       "Facilitated DSA sessions and shared insights on real-world problem-solving for frontend logic."
+=======
+      "Participated in coding challenges and competitions to sharpen problem-solving skills.",
+      "Engaged in regular practice sessions for competitive programming contests.",
+      "Shared problem-solving techniques to support peer learning."
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
     ],
     "imageSrc": "freelance.png"
   },
   {
+<<<<<<< HEAD
     "id": 3,
     "organisation": "Drive with Raj (Car E-commerce Platform)",
     "startDate": "December, 2023",
@@ -71,10 +94,54 @@
   },
   {
     "id": 6,
+=======
+    "id": 2,
+    "organisation": "Freelance / Personal Project - Car Website Frontend",
+    "startDate": "December, 2023",
+    "endDate": "March, 2024",
+    "experiences": [
+      "Developed frontend for a car dealership website using HTML, CSS, Bootstrap, JavaScript, and React JSX.",
+      "Created a responsive interface showcasing car models and features.",
+      "Implemented dynamic search, filters, and comparison for enhanced UX.",
+      "Ensured cross-browser compatibility and mobile responsiveness."
+    ],
+    "imageSrc": "company/microsoft.png"
+  },
+  {
+    "id": 4,
+    "organisation": "Open Source Contributor - Various Projects",
+    "startDate": "March, 2024",
+    "endDate": "Present",
+    "experiences": [
+      "Contributed bug fixes and feature enhancements to open source React libraries.",
+      "Reviewed pull requests and engaged in community discussions.",
+      "Documented component usage and improved test coverage."
+    ],
+    "imageSrc": "company/github.png"
+  },
+  {
+    "id": 5,
+    "organisation": "Fotoflex App (Frontend Developer)",
+    "startDate": "April, 2024",
+    "endDate": "May, 2024",
+    "experiences": [
+      "Built a real-time photo editing app using React.js and Firebase.",
+      "Integrated cropping, filtering, and adjustment tools.",
+      "Used Firebase for authentication, storage, and live updates.",
+      "Designed an intuitive, responsive UI focused on usability."
+    ],
+    "imageSrc": "company/fotoflex.png",
+    "demo": "https://fotoflex-demo.vercel.app",
+    "source": "https://github.com/rajhalder8000/fotoflex"
+  },
+  {
+    "id": 7,
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
     "organisation": "QR Code Generator (Frontend Developer)",
     "startDate": "May, 2024",
     "endDate": "May, 2024",
     "experiences": [
+<<<<<<< HEAD
       "Developed a QR code generator using React.js and a public QR API.",
       "Users can input text/URL and instantly download the corresponding QR code.",
       "Responsive design ensures compatibility across all devices.",
@@ -113,5 +180,29 @@
     "imageSrc": "company/ecom.png",
     "demo": "https://rajhalder123.github.io/Ecommercewebsite/#shoes",
     "source": "https://github.com/rajhalder123/Ecommercewebsite"
+=======
+      "Developed a QR code generator with React.js and a public API.",
+      "Enabled real-time QR code generation based on user input.",
+      "Applied responsive design for mobile and desktop compatibility."
+    ],
+    "imageSrc": "company/qr.png",
+    "demo": "https://qrgen-rajhalder.vercel.app",
+    "source": "https://github.com/rajhalder8000/qr-code-generator"
+  },
+  {
+    "id": 6,
+    "organisation": "Chatty App (Full Stack Developer)",
+    "startDate": "May, 2024",
+    "endDate": "June, 2024",
+    "experiences": [
+      "Created a real-time chat app using React.js and MongoDb.",
+      "Implemented user authentication, notifications, and typing indicators.",
+      "Optimized for real-time message handling and concurrency.",
+      "Focused on responsive design and accessibility across devices."
+    ],
+    "imageSrc": "company/chatty.png",
+    "demo": "https://chatty-app.vercel.app",
+    "source": "https://github.com/rajhalder8000/chatty"
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
   }
 ]

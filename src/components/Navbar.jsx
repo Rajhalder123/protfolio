@@ -10,12 +10,16 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
+<<<<<<< HEAD
     <nav
   className={`nav_bar ${theme === "dark" ? "dark" : ""}`}
   data-aos="fade-down"
   data-aos-duration="1000"
 >
 
+=======
+    <nav className="nav_bar" data-aos="fade-down" data-aos-duration="1000">
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
       <div className="left nav_items logo-box">PORTFOLIO</div>
 
       <div
@@ -31,8 +35,12 @@ const Navbar = () => {
         <span className={`bar ${isOpen ? "open" : ""}`}></span>
       </div>
 
+<<<<<<< HEAD
 <div className={`right nav_links ${isOpen ? "show" : ""} ${theme === "dark" ? "dark" : ""}`}>
 
+=======
+      <div className={`right nav_links ${isOpen ? "show" : ""}`}>
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
         <a href="#home" className="nav_items" onClick={closeMenu}>
           HOME
         </a>

@@ -1,6 +1,10 @@
 /* Base Light Mode (default) */
 .footer {
+<<<<<<< HEAD
 background-color: #2c2c7a;
+=======
+  background-color: rgb(11, 26, 51);
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
   color: white;
   padding: 20px;
   text-align: center;

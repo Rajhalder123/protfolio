@@ -1,6 +1,7 @@
 [
   {
     "key": 1,
+<<<<<<< HEAD
     "title": "AI Verse",
     "imageSrc": "/assets/aiverse.png",
     "description": "AI Verse is a multi-functional AI web application built with React.js and Tailwind CSS. It features a modern UI and integrates powerful tools like a ChatBot, Code Explainer, Text Summarizer, and Interview Prep. The app uses OpenAI's API to deliver intelligent responses and offers smooth routing, dark mode support, and interactive animations for an engaging user experience.",
@@ -18,6 +19,16 @@
   },
   {
     "key": 3,
+=======
+    "title": "Chatty App (MERN Real-time Chat App)",
+    "imageSrc": "https://cdn.prod.website-files.com/62a87a50f7326e83a463e90f/649bf9555950c02faf4cc847_439-p-500.png",
+    "description": "Chatty is a real-time full-stack messaging app built with the MERN stack and Socket.IO. It supports private chats, real-time notifications, Firebase Authentication, and a modern UI built with React, Tailwind CSS, and responsive design principles.",
+    "demo": "https://chatty-mern-app.vercel.app/",
+    "source": "https://github.com/Rajhalder123/chatty-app-fullstack"
+  },
+  {
+    "key": 2,
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
     "title": "Drive with Raj (Car E-commerce Platform)",
     "imageSrc": "https://drive-with-raj.netlify.app/assets/img/Raj%20logo.jpg",
     "description": "Drive with Raj is a premium car e-commerce platform built using React, Firebase Authentication, Firestore, and Storage. It allows users to buy, sell, and explore luxury vehicles with live data sync and a modern UI inspired by CarDekho.",
@@ -25,6 +36,7 @@
     "source": "https://github.com/Rajhalder123/halder-car"
   },
   {
+<<<<<<< HEAD
     "key": 4,
     "title": "World Galaxy",
     "imageSrc": "/assets/world-galaxy.png",
@@ -34,6 +46,17 @@
   },
   {
     "key": 5,
+=======
+    "key": 3,
+    "title": "Chatty App Frontend",
+    "imageSrc": "https://static.vecteezy.com/system/resources/thumbnails/008/296/859/small_2x/concept-illustration-of-man-and-woman-friends-having-online-conversation-messaging-chatting-communication-texting-messages-in-mobile-phone-apps-flat-cartoon-style-free-vector.jpg",
+    "description": "The frontend version of Chatty built using React.js and Firebase Auth. It features real-time design, a friendly chat UI, and smooth routing powered by Tailwind CSS.",
+    "demo": "https://chattyapp.vercel.app",
+    "source": "https://github.com/Rajhalder123/chat-app-frontend"
+  },
+  {
+    "key": 4,
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
     "title": "QR Code Generator",
     "imageSrc": "https://media.licdn.com/dms/image/v2/D4D12AQGzhQNJFwh9EQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1686676891347?e=2147483647&v=beta&t=Jnqhb-k6QW9eNaBOjqmb0qdGlrsHwUk3IZKAEye5c1E",
     "description": "A handy QR Code generator built with React and a public API. Users can instantly convert any link or text into a downloadable QR code with responsive styling.",
@@ -41,8 +64,13 @@
     "source": "https://github.com/Rajhalder123/qr-code-genarater"
   },
   {
+<<<<<<< HEAD
     "key": 6,
     "title": "My First Project React E-Commerce Frontend",
+=======
+    "key": 5,
+    "title": "React E-Commerce Frontend",
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
     "imageSrc": "https://media.geeksforgeeks.org/wp-content/uploads/20240409180455/ecommerce-Website-Project.webp",
     "description": "A stylish React-based e-commerce frontend UI showcasing shoes and other products. Features include category browsing, dynamic routing, and a clean, modern design.",
     "demo": "https://rajhalder123.github.io/Ecommercewebsite/#shoes",

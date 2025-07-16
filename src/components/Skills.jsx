@@ -85,10 +85,16 @@ const SkillBar = ({ level }) => {
 };
 
 const Skills = () => {
+<<<<<<< HEAD
   
   return (
     <section className="skills-section" id="skills">
       <h2 className="section-title">MY SKILLS</h2>
+=======
+  return (
+    <section className="skills-section" id="skills">
+      <h2 className="section-title">🛠 MY SKILLS</h2>
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
 
       <div className="skills-container">
         {skillCategories.map((category, index) => (

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* === Experience Container === */
 #experience {
   padding: 90px 20px;
@@ -82,14 +83,72 @@
 /* === Org + Date === */
 .experience-org-date {
   color: rgb(72, 132, 13);
+=======
+#experience {
+  padding: 80px 20px;
+  max-width: var(--max-width);
+  margin: auto;
+  font-family: var(--font-family);
+  border-radius: var(--border-radius);
+  transition: box-shadow 0.3s ease;
+}
+
+#experience:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+#experience h1 {
+  color: #94d82d;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  /* Remove duplicate color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.experience-card {
+  background-color: var(--background-dark); /* assuming skills use a dark bg */
+  border-radius: var(--border-radius);
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.experience-role {
+  color: #8f94fb;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.experience-org-date {
+  color: var(--secondary-color);
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
   font-weight: 600;
   font-style: italic;
   margin-bottom: 18px;
   text-align: center;
+<<<<<<< HEAD
+=======
+    color: rgb(72, 132, 13);
+
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
 }
 
 .experience-org {
   font-weight: 700;
+<<<<<<< HEAD
   color: #ffd700;
 }
 
@@ -98,19 +157,35 @@
 }
 
 /* === List Items === */
+=======
+  color: var(--accent-color); /* unify accent color */
+}
+
+.experience-date {
+  color: var(--accent-color);
+}
+
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
 .experience-list {
   padding-left: 20px;
   margin: 0;
   list-style-type: disc;
+<<<<<<< HEAD
   color: #e0e0e0;
   font-size: 0.95rem;
   line-height: 1.6;
+=======
+  color: var(--text-color);
+  font-size: 1.05rem;
+  line-height: 1.7;
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
 }
 
 .experience-list li {
   margin-bottom: 12px;
   font-weight: 500;
 }
+<<<<<<< HEAD
 
 /* === Dark Mode === */
 body.dark #experience {
@@ -198,4 +273,10 @@ body.dark .experience-list {
     flex: 0 0 90%;
     padding: 18px;
   }
+=======
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
 }

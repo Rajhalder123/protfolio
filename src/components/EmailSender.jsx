@@ -22,7 +22,11 @@ const SendMessage = () => {
 
     emailjs
       .send(
+<<<<<<< HEAD
         "service_ecwwayd", // Your Service ID
+=======
+        "service_zuk5g69", // Your Service ID
+>>>>>>> 2bbdbc8fcd857699331372607d7bdacc2dde7269
         "template_aqgvqmq", // Your Template ID
         {
           from_name: formData.name,
