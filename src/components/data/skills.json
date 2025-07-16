@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "HTML",
+    "imageSrc": "assets/skills/html.png"
+  },
+  {
+    "id": 2,
+    "title": "CSS",
+    "imageSrc": "assets/skills/css.png"
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "imageSrc": "assets/skills/javascript.png"
+  },
+  {
+    "id": 4,
+    "title": "React",
+    "imageSrc": "assets/skills/react.png"
+  },
+  {
+    "id": 5,
+    "title": "Node",
+    "imageSrc": "assets/skills/node.png"
+  },
+  {
+    "id": 6,
+    "title": "Firebase",
+    "imageSrc": "assets/skills/firebase.png"
+  },
+  {
+    "id": 7,
+    "title": "GraphQL",
+    "imageSrc": "assets/skills/graphql.png"
+  },
+  {
+    "id": 8,
+    "title": "MongoDB",
+    "imageSrc": "assets/skills/mongodb.png"
+  },
+  {
+    "id": 9,
+    "title": "Figma",
+    "imageSrc": "assets/skills/figma.png"
+  }
+]

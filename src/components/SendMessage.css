@@ -1,0 +1,175 @@
+/* ============================
+   Dark Mode: Contact Form Section
+   ============================ */
+body.dark .send-message-container {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .send-message-title,
+body.dark .send-message-description {
+  color: #f0f0f0;
+}
+
+
+
+body.dark .form-input,
+body.dark .form-textarea {
+  background-color: #121212;
+  color: #f0f0f0;
+  border: 1px solid #444;
+}
+
+body.dark .form-input::placeholder,
+body.dark .form-textarea::placeholder {
+  color: #aaa;
+}
+
+body.dark .form-button {
+  background-color: #ffc107;
+  color: #000;
+}
+
+body.dark .form-button:hover {
+  background-color: #ffca28;
+}
+
+body.dark .message-status {
+  color: #9db8ce;
+}
+
+
+/* ============================
+   Container & Layout
+   ============================ */
+.send-message-container {
+  padding: 80px 20px;
+  max-width: var(--max-width);
+  margin: auto;
+  font-family: var(--font-family);
+  border-radius: var(--border-radius);
+  background-color: var(--background-dark);
+  transition: box-shadow 0.3s ease;
+  color: whitesmoke;
+}
+
+.send-message-container:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.send-message-box {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  border-radius: var(--border-radius);
+  background-color: rgb(107, 107, 118);
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  transition: transform 0.3s ease;
+}
+
+.send-message-box:hover {
+  transform: translateY(-5px);
+}
+
+
+/* ============================
+   Typography
+   ============================ */
+.send-message-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.send-message-description {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  text-align: center;
+}
+
+
+/* ============================
+   Form & Inputs
+   ============================ */
+.send-message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input,
+.form-textarea {
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-color);
+  background-color: #1f1f3d;
+  color: var(--text-color);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(147, 204, 41, 0.4);
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+
+/* ============================
+   Buttons
+   ============================ */
+.form-button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: royalblue;
+  color: var(--background-dark);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-button:hover {
+  background-color: rgb(32, 178, 236);
+  transform: translateY(-2px);
+}
+
+
+/* ============================
+   Feedback Message
+   ============================ */
+.message-status {
+  margin-top: 15px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+}
+body.dark .form-button {
+  background-color: rgb(17, 17, 18);
+  color: var(--background-dark);
+}
+
+body.dark .form-button:hover {
+  background-color: rgb(115, 117, 122);
+}
+
